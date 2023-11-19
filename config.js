@@ -69,7 +69,7 @@ global.prems = ['15155188267','62857059457518'] // Premium user has unlimited li
 // =================={[(API KEYS)]}==================
 global.mupar = 'xᴍɴᴢᴠʟʟɴ | ᴢʏᴋᴏʙᴏᴛᴢ'
 global.org = '4SVXAlaZC9Ix9LK5O33M7qeZ'
-global.openai = '_' // ISI APIKEY OPENAI LU 🥵
+global.openai = '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' // ISI APIKEY OPENAI LU 🥵
 global.APIs = {
 can: 'https://pnggilajacn.my.id',
 skizo: 'https://xzn.wtf',
@@ -84,10 +84,10 @@ xzn: 'https://xzn.wtf'
 }
 global.APIKeys = {
 'https://pnggilajacn.my.id': '_',      // ISI APIKEY OPENAI LU 🥵
-'https://xzn.wtf': '_',     // https://wa.me/6289523302916 🙂
+'https://xzn.wtf': 'Zxfrcv',     // https://wa.me/6289523302916 🙂
 'https://api.xteam.xyz': '_',    // ISI APIKEY OPENAI LU 🥵
 'https://zenzapis.xyz': '_',    // ISI APIKEY OPENAI LU 🥵
-'https://api-fgmods.ddns.net': '_',    // ISI APIKEY OPENAI LU 🥵
+'https://api-fgmods.ddns.net': 'Jyg8aCRF',    // ISI APIKEY OPENAI LU 🥵
 'https://zenzapi.xyz': '_',    // ISI APIKEY OPENAI LU 🥵
 'https://violetics.pw': '_',   // ISI APIKEY OPENAI LU 🥵
 'https://api.lolhuman.xyz': '_',   // https://wa.me/6289523302916LU 🙂
@@ -99,7 +99,7 @@ global.lol = '_'      // https://wa.me/6289523302916 🙂
 global.rose = '_'  // ISI APIKEY OPENAI LU 🥵
 global.xyro = '_'  // ISI APIKEY OPENAI LU 🥵
 global.xzn = '_'   // https://wa.me/6289523302916 🙂
-global.wait = 'SBR KINTIL'
+global.wait = '*_Tunggu sedang diproses..._*'
 ///==================/thumbnail 
 global.thumb = 'https://a.uguu.se/NVMaNaXH.jpg' //Main Thumbnail
 global.thumb2 = 'https://a.uguu.se/NVMaNaXH.jpg'
@@ -108,22 +108,22 @@ global.giflogo = 'https://a.uguu.se/wBerVNpr.mp4'
 global.thumblvlup = 'https://telegra.ph/file/a3e66e0fa840b08236c75.jpg'
 global.footer = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ ฅ˘ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
 /*============== SOCIAL ==============*/
-global.sig = 'https://instagram.com/sanz_offc1' //Link Instagrammu
-global.sgh = 'https://heylink.me/sanzbtk' //Link Githubmu
-global.sgc = 'https://chat.whatsapp.com/B58RKP8sl23CqH2RVbTB5h'
-global.sdc = 'https://heylink.me/sanzbtk' //Isi Pake Link Discordmu Kalo Gada Biarin aja
+global.sig = 'https://instagram.com' //Link Instagrammu
+global.sgh = 'https://github.com/SlavMnzz' //Link Githubmu
+global.sgc = 'https://chat.whatsapp.com/ITuY4qQrA4v1TPX2f0PC4Y'
+global.sdc = 'https://astrobotz.carrd.co' //Isi Pake Link Discordmu Kalo Gada Biarin aja
 global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi terserah :v
 //global.logo = ImgMountain()
-global.sfb = 'https://heylink.me/sanzbtk'
-global.syt = 'https://youtube.com/@KIZH15'
+global.sfb = 'https://github.com/SlavMnzz'
+global.syt = 'https://github.com/SlavMnzz'
 //====== Url Template Buttons ======//
 global.dtu = 'ᴅᴏɴᴀᴛᴇ'
-global.urlnya = "https://heylink.me/sanzbtk"
+global.urlnya = "https://github.com/SlavMnzz"
 //========== callButtons ==========//
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
 global.phn = +'62 821-5401-6437'
 global.ephemeral = '86400' // 86400 = 24jam, kalo ingin di hilangkan ganti '86400' jadi 'null' atau ''
-global.monitor = "u1931038-1f70a77eef5964be82e7d606" // Ambil di https://uptimerobot.com
+global.monitor = "u2325729-e9abf6a33aa8198e3849730c" // Ambil di https://uptimerobot.com
 global.multiplier = 69 // The higher, The harder levelup
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
@@ -171,7 +171,7 @@ global.AraChu2 = [
   "https://a.uguu.se/MfXUWjpR.jpg",
   "https://a.uguu.se/MfXUWjpR.jpg",
   "https://a.uguu.se/MfXUWjpR.jpg",
-  "https://a.uguu.se/MfXUWjpR.jpg,
+  "https://a.uguu.se/MfXUWjpR.jpg",
   "https://a.uguu.se/MfXUWjpR.jpg",
   "https://a.uguu.se/MfXUWjpR.jpg"
 ]
