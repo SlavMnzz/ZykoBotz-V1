@@ -23,6 +23,7 @@ let handler = async (m, { conn, text, usedPrefix: _p }) => {
 	// Github : https://github.com/Chandra-XD
 	}
 handler.help = ['otakuinfo'].map(v => v + ' <url>')
-handler.tags = ['tools']
+handler.tags = ['tools','premium']
+handler.premium = true
 handler.command = /^(otakuinfo|otakudesuinfo)$/i
 export default handler

@@ -19,6 +19,7 @@ let handler = async (m, { conn, text }) => {
 	// Github : https://github.com/Chandra-XD
 	}
 handler.help = ['otakudl'].map(v => v + ' <id>')
-handler.tags = ['downloader']
+handler.tags = ['downloader','premium']
+handler.premium = true
 handler.command = /^(otakudl|otakudesudl)$/i
 export default handler

@@ -10,9 +10,8 @@ let tags = {}
 
 const defaultMenu = {
   before: `ㅤ
-┌ ◦*%name*
-│ 
-│ ◦*STATUS*
+┌ ◦ *%name*
+│ ◦ *STATUS*
 │ 
 │ ◦ *Uptime*  : %uptime  
 │ ◦ *Jam*     : %time     

@@ -28,7 +28,7 @@ let handler = async (m, { conn, isOwner, usedPrefix, command, text }) => {
 handler.help = ['voiceai']
 handler.tags = ['ai']
 handler.command = /^(voiceai|svc1|sovits)$/i
-handler.premium = true
+handler.premium = false
 
 export default handler
 

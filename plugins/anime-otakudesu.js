@@ -22,6 +22,7 @@ let handler = async (m, { conn, args, usedPrefix: _p }) => {
 	// Github : https://github.com/Chandra-XD
 	}
 handler.help = ['otaku'].map(v => v + ' <anime>')
-handler.tags = ['tools']
+handler.tags = ['tools','premium']
 handler.command = /^(otaku|otakudesu)$/i
+handler.premium = true
 export default handler

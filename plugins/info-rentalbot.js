@@ -1,28 +1,37 @@
 import { apivisit } from './kanghit.js'
 
 let handler = async (m, { conn }) => {
-let tekss = `List harga sewabot :
-5 Hari 3k
-2 Minggu 10k
-1 Bulan 17k
-1 Tahun 50k
+let tekss = `ʟɪsᴛ ʜᴀʀɢᴀ sᴇᴡᴀ ʙᴏᴛ ᴢʏᴋᴏ :
+5 ʜᴀʀɪ 3ᴋ
+2 ᴍɪɴɢɢᴜ 10ᴋ
+1 ʙᴜʟᴀɴ 15ᴋ
+2 ʙᴜʟᴀɴ 25ᴋ + ɢʀᴀᴛɪs ᴘʀᴇ 3 ᴏʀɢ 
+4 ʙᴜʟᴀɴ 45ᴋ + ɢʀᴀᴛɪs ᴘʀᴇᴍ 6 ᴏʀɢ 
 
-Fitur
-Downloader
-Tiktok, Instagram, Facebook, Mega, SoundCloud, Telegram Sticker, Twitter, Cocofun, Google Drive, MediaFire, Gitclone, Ytmp3, Ytmp4, Pinterest
+ʟɪsᴛ ʜᴀʀɢᴀ ᴜᴘ ᴘʀᴇᴍɪᴜᴍ :
+3 ʜᴀʀɪ 1ᴋ
+7 ʜᴀʀɪ 3ᴋ
+2 ᴍɪɴɢɢᴜ 7ᴋ
+1 ʙᴜʟᴀɴ 15ᴋ
+2 ʙᴜʟᴀɴ 20ᴋ
+3 ʙᴜʟᴀɴ 30ᴋ
 
-Special Fitur
-Otakudesu Latest, Detail, Download
-Nekopoi Latest, Detail, Download
+ғɪᴛᴜʀ
+ᴅᴏᴡɴʟᴏᴀᴅᴇʀ
+ᴛɪᴋᴛᴏᴋ, ғᴀᴄᴇʙᴏᴏᴋ, ᴍᴇɢᴀ, sᴏᴜɴᴅᴄʟᴏᴜᴅ, ᴛᴇʟᴇɢʀᴀᴍ Sticker, ᴛᴡɪᴛᴛᴇʀ, ᴄᴏᴄᴏғᴜɴ, ɢ-ᴅʀɪᴠᴇ, ᴍᴇᴅɪᴀғɪʀᴇ, ɢɪᴛᴄʟᴏɴᴇ, ʏᴛᴍᴘ3, ʏᴛᴍᴘ4, ᴘɪɴᴛᴇʀᴇsᴛ
 
-*Pembayaran?? all payment*
-Dana/ovo/gopay/qris
-Via pulsa?? nambah 5k
-Chat https://s.id/callmepin`
+sᴘᴇᴄɪᴀʟ ғɪᴛᴜʀ [ ᴏɴʟʏ ᴘʀᴇᴍ ]
+ᴏᴛᴀᴋᴜᴅᴇsᴜ ʟᴀᴛᴇsᴛ, ᴅᴇᴛᴀɪʟ, ᴅᴏᴡɴʟᴏᴀᴅ
+ɴᴇᴋᴏᴘᴏɪ ʟᴀᴛᴇsᴛ , ᴅᴇᴛᴀɪʟ, ᴅᴏᴡɴʟᴏᴀᴅ
+
+*ᴘᴇᴍʙᴀʏᴀʀᴀɴ?? ᴀʟʟ ᴘᴀʏᴍᴇɴᴛ*
+ᴅᴀɴᴀ/ᴏᴠᴏ/ɢᴏᴘᴀʏ/ǫʀɪs
+ᴠɪᴀ ᴘᴜʟsᴀ?? ɴᴀᴍʙᴀʜ 5ᴋ
+Chat wa.me/15155188267`
 await m.reply(tekss)
 await apivisit
 }
 handler.help = ['iklan']
 handler.tags = ['info']
-handler.command = /^(rental|iklan|sewabot|sewa)$/i
+handler.command = /^(rental|iklan|sewabot|sewa|prem|premium)$/i
 export default handler

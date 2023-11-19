@@ -134,8 +134,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	}
 };
 handler.help = ["remini","color","hdr"];
-handler.tags = ["ai"];
-handler.premium = false
+handler.tags = ["ai","premium"];
+handler.premium = true
 handler.group = true
 handler.command = ["remini","color","hdr"];
 export default handler;

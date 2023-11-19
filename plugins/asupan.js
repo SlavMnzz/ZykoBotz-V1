@@ -5,7 +5,7 @@ handler.help = ['asupan']
 handler.tags = ['asupan']
 handler.command = /^asupan$/i
 
-handler.premium = false
+handler.premium = true
 handler.fail = null
 handler.register = true
 

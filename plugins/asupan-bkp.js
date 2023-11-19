@@ -8,5 +8,5 @@ let handler = async (m, { conn, command }) => {
 handler.command = /^(bkp)$/i
 handler.tags = ['random']
 handler.help = ['bkp']
-handler.premium = false
+handler.premium = true
 export default handler

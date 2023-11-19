@@ -55,7 +55,7 @@ await this.reply(m.chat, `*Kata Aneh Terdeteksi!* ${isBotAdmin ? '' : '\n\n_Bot 
 if (isBotAdmin && bot.restrict) {
             // await this.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
     global.db.data.users[m.sender].warn += 1
-    global.db.data.users[m.sender].banned = true
+    global.db.data.users[m.sender].banned = false
     return this.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: hapus }})
         } else if (!bot.restrict) return m.reply('Semoga harimu suram!')
     }

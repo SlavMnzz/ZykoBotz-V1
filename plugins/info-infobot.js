@@ -51,7 +51,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  let capti = `🤖 ɴᴀᴍᴇ: ${_package.name}
+  let capti = `🤖 ɴᴀᴍᴇ: ᴢʏᴋᴏʙᴏᴛᴢ
 🧩 ᴠᴇʀsɪᴏɴ: ${_package.version}
 📚 ʟɪʙʀᴀʀʏ: ${_package.description}
 
@@ -66,11 +66,11 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
 ⮕ ʀᴀᴍ: ${format(totalmem() - freemem())} / ${format(totalmem())}
 
 💬 ᴡʜᴀᴛsᴀᴩᴩ sᴛᴀᴛᴜs :
-⮕ ${groupsIn.length} - Group Chats
-⮕ ${groupsIn.length} - Groups Joined
-⮕ ${groupsIn.length - groupsIn.length} - Groups Left
-⮕ ${chats.length - groupsIn.length} - Personal Chats
-⮕ ${chats.length} - Total Chats
+⮕ ${groupsIn.length} - ɢʀᴏᴜᴘ ᴄʜᴀᴛ
+⮕ ${groupsIn.length} - ɢʀᴏᴜᴘ ᴊᴏɪɴᴇᴅ
+⮕ ${groupsIn.length - groupsIn.length} - ɢʀᴏᴜᴘs ʟᴇғᴛ
+⮕ ${chats.length - groupsIn.length} - ᴘᴇʀsᴏɴᴀʟ ᴄʜᴀᴛs
+⮕ ${chats.length} - ᴛᴏᴛᴀʟ ᴄʜᴀᴛs
 `.trim()
 
     await m.reply(capti)
