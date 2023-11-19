@@ -1,13 +1,11 @@
-import { family100 } from '@bochilteam/scraper'
-const winScore = 4999
+import fs from 'fs'
+const winScore = 85000
 async function handler(m) {
     this.game = this.game ? this.game : {}
     let id = 'family100_' + m.chat
-    if (id in this.game) {
-        this.reply(m.chat, 'Masih ada kuis yang belum terjawab di chat ini', this.game[id].msg)
-        throw false
-    }
-    const json = await family100()
+    if (id in this.game) return this.reply(m.chat, 'Masih ada kuis yang belum terjawab di chat ini', this.game[id].msg)
+    let src = JSON.parse(fs.readFileSync('./json/family100.json', 'utf-8'))
+    let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
 *Soal:* ${json.soal}
 Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' ')) ? `
@@ -17,7 +15,7 @@ Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' '
     `.trim()
     this.game[id] = {
         id,
-        msg: await this.reply(m.chat, caption, m),
+        msg: await m.reply(caption), 
         ...json,
         terjawab: Array.from(json.jawaban, () => false),
         winScore,
@@ -26,5 +24,6 @@ Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' '
 handler.help = ['family100']
 handler.tags = ['game']
 handler.command = /^family100$/i
-
+handler.onlyprem = true
+handler.game = true
 export default handler

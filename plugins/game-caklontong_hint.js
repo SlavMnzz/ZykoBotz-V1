@@ -5,10 +5,8 @@ let handler = async (m, { conn }) => {
     let json = conn.caklontong[id][1]
     let ans = json.jawaban
     let clue = ans.replace(/[AIUEO]/gi, '_')
-    m.reply('```' + clue + '```')
+    m.reply('```' + clue + '```' + '\n\n*Jangan Balas Chat Ini Tapi Balas Soalnya*')
 }
 handler.command = /^calo$/i
-
 handler.limit = true
-
 export default handler

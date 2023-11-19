@@ -9,7 +9,7 @@ handler.before = async function (m) {
 	let users = db.data.users
 	let _kata = await genKata()
 	let member = room.player
-	let bonus = rwd(500, 600)
+	let bonus = rwd(1000000, 1100000)
 	let lose_skata
 	let win_skata
 	function mmr(apa = '', jid = '') {
@@ -18,9 +18,9 @@ handler.before = async function (m) {
 		if (apa == 'win') {
 			if (user.skata > 5000) win_skata = rwd(5, 9)
 			else if (user.skata > 3000) win_skata = rwd(5, 10)
-			else if (user.skata > 1500) win_skata = rwd(10, 15)
-			else if (user.skata > 1000) win_skata = rwd(15, 20)
-			else if (user.skata > 500) win_skata = rwd(20, 30)
+			else if (user.skata > 100000) win_skata = rwd(10, 15)
+			else if (user.skata > 200000) win_skata = rwd(15, 20)
+			else if (user.skata > 10000) win_skata = rwd(20, 30)
 			else win_skata = rwd(30, 50)
 		} else {
 			if (user.skata > 8000) lose_skata = rwd(35, 50)
@@ -127,7 +127,7 @@ handler.before = async function (m) {
 			room.curr = member[waktunya + 1]
 			if (waktunya + 1 >= member.length) room.curr = member[0]
 			room.basi.push(answerF)
-			room.win_point += 200
+			room.win_point += 1000000
 			room.chat = await this.reply(m.chat, `👍+${bonus}XP\nGiliran @${room.curr.split`@`[0]}\n*${room.filter(answerF).toUpperCase()}... ?*\n*Reply untuk menjawab!*\n"nyerah" untuk menyerah\nXP terkumpul: ${room.win_point}\nTersisa: \n${room.player.map((v, i) => i + 1 + '. ' + users[v].name).join('\n')}`, m, { contextInfo: { mentionedJid: member } })
 			room.diam = true
 			room.kata = answerF

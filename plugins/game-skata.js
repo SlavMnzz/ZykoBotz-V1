@@ -12,10 +12,10 @@ const rules = `╔══「 *PERATURAN* 」
 ║  spasi dan imbuhan (me-, -an, dll).
 ╟ Pemain yang bertahan akan
 ║  menang dan mendapatkan
-║  500xp X jumlah pemain
+║  1000000 X jumlah pemain
 ╟ .skata start untuk memulai
 ╚═════`.trim()
-let poin = 500
+let poin = 1000000
 let handler = async (m, { conn, text, isPrems, isROwner, usedPrefix, command }) => {
 	let isDebug = /debug/i.test(command) && isROwner
 	//if (!isPrems) throw `Game ini dalam tahap pengemmbangan.. cooming soon`
@@ -38,7 +38,7 @@ let handler = async (m, { conn, text, isPrems, isROwner, usedPrefix, command }) 
 			room.curr = member[0]
 			room.status = 'play'
 			room.chat = await conn.reply(m.chat, `Saatnya @${member[0].split`@`[0]}\nMulai : *${(room.kata).toUpperCase()}*\n*${room.filter(room.kata).toUpperCase()}... ?*\n*Reply untuk menjawab!*\n"nyerah" untuk menyerah\nTotal: ${member.length} Player`, m, { contextInfo: { mentionedJid: member } })
-			room.win_point = 100
+			room.win_point = 1000000
 			for (let i of room.player) {
 				let user = db.data.users[i]
 				if (!('skata' in user)) user.skata = 0
